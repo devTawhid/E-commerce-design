@@ -1,0 +1,57 @@
+/*Customization of Bootstrap*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+$font-family-sans-serif: "Poppins", sans-serif;
+
+/* Importing Bootstrap from node_modules*/
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/*All custom css*/
+body {
+  background-color: #f6f6f6;
+}
+
+.wooTop__nav__items {
+  color: #555252;
+  //   position: relative;
+  //   border-right: 1px solid #d5d4d4;
+  &:hover {
+    color: #a749ff;
+  }
+}
+
+.wooTop__nav__item--bordered::after {
+  //   border-right: 1px solid #d5d4d4;
+  position: absolute;
+  top: 47%;
+  right: 0;
+  width: 1px;
+  height: 15px;
+  content: "";
+  transform: translateY(-50%);
+  background-color: #d5d4d4;
+}
+
+.wooTop__nav__submenu {
+  display: none;
+}
+
+.wooTop__nav__dropdown {
+  position: relative;
+}
+
+.wooTop__nav__dropdown:hover .wooTop__nav__submenu {
+  display: block;
+  position: absolute;
+  z-index: 220;
+  top: 30px;
+  left: 20px;
+  width: 125px;
+  padding: 8px 12px 10px;
+  transition: all 0.5s ease 0s;
+  transform-origin: center top 0;
+  text-align: left;
+  opacity: 13;
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+}
