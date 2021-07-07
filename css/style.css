@@ -11123,5 +11123,96 @@ body {
   }
 }
 /*Support section css ends*/
+/*Subscribe section css starts*/
+.WooSubscribe {
+  margin-bottom: 100px;
+}
+.WooSubscribe__title {
+  font-size: 48px;
+  margin: 0 0 23px;
+  color: #010101;
+}
+.WooSubscribe__description {
+  font-size: 16px;
+  margin: 0 0 23px;
+  color: #696969;
+}
+
+/************Form section***********/
+.WooSubscribe__form {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+.WooSubscribe__form__input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #e2e2e2;
+  width: 100%;
+  height: 45px;
+  padding: 2px 50px 2px 0;
+  color: #333;
+}
+.WooSubscribe__form__input::placeholder {
+  line-height: 45px;
+  font-size: 14px;
+  padding-bottom: 500px;
+}
+.WooSubscribe__form__input:focus {
+  border: 0;
+}
+.WooSubscribe__form__submit {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  font-size: 30px;
+  height: 45px;
+  padding: 0;
+  transition: 0.3s;
+  color: #cacaca;
+  border: none;
+  background: none;
+}
+
+/************Form section***********/
+/*Subscribe section css ends*/
+/*footer starts*/
+footer {
+  padding: 80px 0;
+  background-color: #f1f1f1;
+}
+
+.footer__logo img {
+  margin-top: 41px;
+  margin-bottom: 12px;
+}
+
+.footer__widget__title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 16px;
+  color: #313131;
+  text-transform: uppercase;
+}
+.footer__widget ul {
+  list-style: none;
+}
+.footer__widget ul li {
+  margin: 0 0 11px;
+  font-size: 14px;
+  color: #5d5d5d;
+}
+.footer__widget ul li:hover {
+  color: #a749ff;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #313131;
+  letter-spacing: 0.9px;
+}
+
+/*footer ends*/
 
 /*# sourceMappingURL=style.css.map */
