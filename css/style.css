@@ -10864,8 +10864,16 @@ body {
   position: relative;
   overflow: hidden;
 }
+.WooFeatCard__single:hover .WooFeatCard__single__content__icon {
+  color: #617d0590;
+  border: 2px solid #617d0550;
+  /*icon hover*/
+}
+.WooFeatCard__single img {
+  transition: all 0.5s ease;
+}
 .WooFeatCard__single:hover img {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 .WooFeatCard__single__content {
   position: absolute;
@@ -10900,5 +10908,180 @@ body {
 }
 
 /*Featured-banner-card css ends*/
+/* Daily Deals css starts */
+.WooDailyDeals__heading__title {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+}
+.WooDailyDeals__heading__title::before, .WooDailyDeals__heading__title::after {
+  position: absolute;
+  top: 17px;
+  width: 80px;
+  height: 2px;
+  content: "";
+  background-color: #000;
+}
+.WooDailyDeals__heading__title::before {
+  left: -100px;
+}
+.WooDailyDeals__heading__title::after {
+  right: -100px;
+}
+
+.WooDailyDeals__tablist__tab a {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  transition: all 0.3s ease 0s;
+  color: #555;
+}
+
+/************ PRODUCTS ***********/
+.WooDailyDeals__product__single {
+  margin: 30px 0;
+  overflow: hidden;
+  position: relative;
+}
+.WooDailyDeals__product__single__img img {
+  width: 100%;
+  overflow: hidden;
+}
+.WooDailyDeals__product__single__img img:nth-child(2) {
+  position: absolute;
+  right: -100px;
+  opacity: 0;
+  z-index: 7;
+  transition: all 0.7s ease;
+}
+.WooDailyDeals__product__single:hover img:nth-child(2) {
+  opacity: 1;
+  right: 0;
+}
+.WooDailyDeals__product__single__badges {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 9;
+}
+.WooDailyDeals__product__single__badges span {
+  display: block;
+  margin-bottom: 10px;
+  padding: 3px 11px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  border-radius: 3px;
+}
+.WooDailyDeals__product__single__badges span:nth-child(1) {
+  background: #fa6bff;
+}
+.WooDailyDeals__product__single__badges span:nth-child(2) {
+  background: #a749ff;
+}
+.WooDailyDeals__product__single__action {
+  width: 100%;
+  position: absolute;
+  bottom: 96px;
+  display: flex;
+  overflow: hidden;
+  z-index: 9;
+}
+.WooDailyDeals__product__single__action button {
+  font-size: 16px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  background: #a749ff;
+}
+.WooDailyDeals__product__single__action button:hover {
+  background: #000;
+}
+.WooDailyDeals__product__single__action__wishlist {
+  width: 48px;
+  height: 48px;
+  border: none;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+  opacity: 0;
+}
+.WooDailyDeals__product__single__action__cart {
+  width: calc(100% - 2 * 48px);
+  height: 48px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-top: none;
+  border-bottom: none;
+  transform: translateY(20px);
+  transition: all 0.7s ease;
+  opacity: 0;
+}
+.WooDailyDeals__product__single__action__quickview {
+  width: 48px;
+  height: 48px;
+  border: none;
+  transform: translateY(10px);
+  transition: all 0.7s ease;
+  opacity: 0;
+}
+.WooDailyDeals__product__single:hover .WooDailyDeals__product__single__action__cart, .WooDailyDeals__product__single:hover .WooDailyDeals__product__single__action__quickview, .WooDailyDeals__product__single:hover .WooDailyDeals__product__single__action__wishlist {
+  transform: translateY(0);
+  transition: all 0.7s ease;
+  opacity: 1;
+}
+.WooDailyDeals__product__single__info {
+  margin-top: 20px;
+}
+.WooDailyDeals__product__single__info__title {
+  font-size: 16px;
+  margin: 0;
+}
+.WooDailyDeals__product__single__info__title a {
+  text-decoration: none;
+  color: #000;
+}
+.WooDailyDeals__product__single__info__title a:hover {
+  color: #a749ff;
+}
+.WooDailyDeals__product__single__info__rating {
+  margin: 3px 0;
+}
+.WooDailyDeals__product__single__info__rating .yellow {
+  color: #ffa900;
+}
+.WooDailyDeals__product__single__info__rating .gray {
+  color: #5f5d5d;
+}
+.WooDailyDeals__product__single__info__price {
+  font-size: 15px;
+  font-weight: 500;
+}
+.WooDailyDeals__product__single__info__price__sale {
+  position: relative;
+  color: #000;
+  margin: 0 9px;
+}
+.WooDailyDeals__product__single__info__price__sale::after {
+  position: absolute;
+  top: 10px;
+  right: -13px;
+  width: 7px;
+  height: 2px;
+  content: "";
+  background-color: #000;
+}
+.WooDailyDeals__product__single__info__price__regular {
+  text-decoration: line-through;
+  color: #8e8e8e;
+  margin: 0 9px;
+}
+
+/************ PRODUCTS ***********/
+/* Daily Deals css ends */
 
 /*# sourceMappingURL=style.css.map */
