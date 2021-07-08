@@ -11214,5 +11214,21 @@ footer {
 }
 
 /*footer ends*/
+/*Archive shop navigation starts*/
+.WooTopNav__notice {
+  margin: 0;
+  letter-spacing: 0.8px;
+  color: #555252;
+}
+.WooTopNav__notice p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+/*Archive shop navigation ends*/
 
 /*# sourceMappingURL=style.css.map */
