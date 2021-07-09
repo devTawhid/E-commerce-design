@@ -10756,7 +10756,7 @@ textarea.form-control-lg {
 }
 /* All custom css */
 /* Navitation css */
-body {
+.home {
   background-color: #f6f6f6;
 }
 
@@ -10802,6 +10802,70 @@ body {
   box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
 }
 
+/****************** Mega menu css ********************/
+.Wootext-primary {
+  color: #a749ff;
+}
+
+.position__ralative {
+  position: relative;
+}
+
+.wooTop__nav__submenu--shop {
+  display: none;
+}
+
+.wooTop__nav__dropdown:hover .wooTop__nav__submenu--shop {
+  display: flex;
+  position: absolute;
+  z-index: 220;
+  top: 30px;
+  left: 20px;
+  width: 700px;
+  padding: 40px;
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
+}
+
+.wooTop__nav__submenu--shop h3, .wooTop__nav__submenu--shop .h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+.wooTop__nav__submenu--shop li {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 32px;
+  display: block;
+  padding-top: 0;
+  text-align: left;
+  text-transform: capitalize;
+  color: #333;
+  position: relative;
+  transition: all 3s ease-in-out 0s;
+}
+.wooTop__nav__submenu--shop li:hover {
+  color: #a749ff;
+  transition: all 3s ease-in-out 0s;
+  margin-right: 12px;
+}
+.wooTop__nav__submenu--shop li:hover::before {
+  display: inline-block;
+  margin-right: 10px;
+  z-index: 999;
+  width: 7px;
+  height: 7px;
+  content: "";
+  transition: all 3s ease-in-out 0s;
+  opacity: 1;
+  border-radius: 50%;
+  background: #a749ff;
+}
+
+/****************** Mega menu css ********************/
 /* Navitation css ends*/
 /*Main Carousel css starts*/
 .carousel-control-prev {
@@ -11230,5 +11294,83 @@ footer {
 }
 
 /*Archive shop navigation ends*/
+/* page header breadcrumb css starts*/
+.WooPageHeader {
+  background: #f7f7f7;
+}
+
+/* page header breadcrumb css ends*/
+/* shop sidebar css starts */
+.WooShopSidebar__widgets__title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+.WooShopSidebar__widgets__content {
+  margin: 30px 0;
+}
+.WooShopSidebar__widgets__content form {
+  position: relative;
+  width: 80%;
+}
+.WooShopSidebar__widgets__content form .search-input {
+  width: 100%;
+  font-size: 14px;
+  height: 43px;
+  padding: 2px 55px 2px 18px;
+  color: #000;
+  border: 1px solid #e6e6e6;
+  background: transparent;
+}
+.WooShopSidebar__widgets__content form button {
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 0%;
+  padding: 0 15px;
+  cursor: pointer;
+  transform: translateY(0%);
+  color: #000;
+  border: #a1a5aa;
+  border-left: 1px solid #a1a5aa;
+}
+.WooShopSidebar__widgets__content__categories button {
+  background: none;
+  border: none;
+  position: relative;
+  padding-left: 30px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.WooShopSidebar__widgets__content__categories button .category__checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border: 2px solid #888;
+  border-radius: 3px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: white;
+}
+.WooShopSidebar__widgets__content__categories button .category__checkbox::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 3px;
+  width: 5px;
+  height: 8px;
+  transform: rotate(45deg);
+  border: solid white;
+}
+.WooShopSidebar__widgets__content__categories button:hover .category__checkbox {
+  background-color: #a749ff;
+  border: 2px solid #a749ff;
+}
+
+/* shop sidebar css ends */
 
 /*# sourceMappingURL=style.css.map */
