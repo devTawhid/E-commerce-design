@@ -73,6 +73,9 @@ $carousel-control-color: invert(100%);
 .Wootext-primary {
   color: #a749ff;
 }
+.Woo-primary-bg {
+  background: #a749ff;
+}
 
 .position__ralative {
   position: relative;
@@ -689,16 +692,16 @@ footer {
 
         button {
           font-size: 20px;
-          position: relative;
+          position: absolute;
           top: 50%;
-          left: 0%;
+          right: 0%;
           padding: 0 15px;
           cursor: pointer;
-          transform: translateY(0%);
+          transform: translateY(-50%);
           color: #000;
           border: #a1a5aa;
           border-left: 1px solid #a1a5aa;
-          // background: transparent;
+          background: transparent;
         }
       }
 
@@ -741,8 +744,90 @@ footer {
             border: 2px solid #a749ff;
           }
         } //button
-      }
+
+        ul {
+          padding-left: 0;
+          width: 80%;
+
+          .btn__tag {
+            font-size: 14px;
+            background-color: #f1f1f1;
+            border-radius: 50px;
+            margin-bottom: 15px;
+            margin-right: 10px;
+
+            &:hover {
+              color: white;
+              background-color: #a749ff;
+            }
+          }
+        }
+      } //category
     } //content ends
-  }
+  } //widgets end
 }
 /* shop sidebar css ends */
+
+/*Shope page conent starts*/
+/**********************Content header starts****************/
+#WooShop__dropdown__button {
+  font-size: 14px;
+  min-width: 143px;
+  padding: 5px;
+  color: #606060;
+  border: 1px solid #e6e6e6;
+  background: transparent;
+  text-align: left;
+}
+.filter__result {
+  font-size: 14px;
+  color: #606060;
+}
+.filter__icons {
+  color: #606060;
+}
+.filter__icon {
+  padding: 0 10px;
+}
+/**********************Content header ends****************/
+
+/**********************pagination css starts****************/
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #a749ff;
+  border-color: #a749ff;
+}
+.pagination {
+  .active {
+    background: #a749ff !important;
+  }
+
+  li {
+    margin: 0 10px;
+    border-radius: 50% !important;
+
+    a,
+    span {
+      font-size: 16px;
+      line-height: 43px;
+      display: inline-block;
+      width: 43px;
+      height: 43px;
+      padding: 0;
+      text-align: center;
+      color: #a749ff;
+      border: none;
+      border-radius: 100% !important;
+      background: none;
+      box-shadow: 0 0 12px 0.8px rgb(0 0 0 / 10%);
+
+      &:hover {
+        background: #a749ff;
+        color: #fff;
+      }
+    }
+  }
+}
+/**********************pagination css ends****************/
+/*Shope page conent ends*/
