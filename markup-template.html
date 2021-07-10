@@ -93,14 +93,15 @@
     <!-- Top navigation section ends -->
 
     <!-- Navigation section bottom starts -->
-    <nav class="navbar navbar-light bg-light">
+    <!-- Navigation section bottom starts -->
+    <nav class="navbar navbar-light">
       <div class="container d-flex space-between">
-        <div class="col-3">
+        <div class="col-2">
           <img src="images/logo.png" alt="logo" class="wooTop__nav__logo" />
         </div>
 
-        <div class="col-6">
-          <ul class="navbar-nav flex-row">
+        <div class="col-8">
+          <ul class="navbar-nav flex-row justify-content-center">
             <li class="nav-item px-3">
               <a
                 class="wooTop__nav__items wooTop__nav__dropdown nav-link"
@@ -114,17 +115,65 @@
                 </ul>
               </a>
             </li>
+
             <li class="nav-item px-3">
-              <a class="wooTop__nav__items nav-link" href="#">Shop</a>
+              <a
+                class="position__ralative wooTop__nav__dropdown nav-link"
+                href="#"
+                >Shop
+                <span class="ps-2"><i class="fa fa-angle-down"></i></span>
+                <!--********* Mega menu markup starts *********-->
+                <div class="wooTop__nav__submenu--shop">
+                  <div class="col-4">
+                    <h3>SHOP LAYOUT</h3>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">Shop Grid Standard</li>
+                      <li class="nav-item">Shop Grid Filter</li>
+                      <li class="nav-item">Shop Grid Two Column</li>
+                      <li class="nav-item">Shop Grid No Sidebar</li>
+                      <li class="nav-item">Shop Grid Full Width</li>
+                      <li class="nav-item">Shop Grid Right Sidebar</li>
+                      <li class="nav-item">Shop List Standard</li>
+                      <li class="nav-item">Shop List Full Width</li>
+                      <li class="nav-item">Shop List Two Column</li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <h3>PRODUCT DETAILS</h3>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">Product Tab Bottom</li>
+                      <li class="nav-item">Product Tab Left</li>
+                      <li class="nav-item">Product Tab Right</li>
+                      <li class="nav-item">Product Sticky</li>
+                      <li class="nav-item">Product Slider</li>
+                      <li class="nav-item">Product Fixed Image</li>
+                      <li class="nav-item">Product Simple</li>
+                      <li class="nav-item">Product Variation</li>
+                      <li class="nav-item">Product Affiliate</li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <img src="images/Project-img02.png" alt="" />
+                  </div>
+                </div>
+                <!--*********** Mega menu markup ends ***********-->
+              </a>
+            </li>
+
+            <li class="nav-item px-3">
+              <a class="wooTop__nav__items nav-link" href="#">Collection </a>
             </li>
             <li class="nav-item px-3">
-              <a class="wooTop__nav__items nav-link" href="#">Collection</a>
+              <a class="wooTop__nav__items nav-link" href="#"
+                >Pages
+                <span class="ps-2"><i class="fa fa-angle-down"></i></span>
+              </a>
             </li>
             <li class="nav-item px-3">
-              <a class="wooTop__nav__items nav-link" href="#">Pages</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="wooTop__nav__items nav-link" href="#">Blog</a>
+              <a class="wooTop__nav__items nav-link" href="#"
+                >Blog
+                <span class="ps-2"><i class="fa fa-angle-down"></i></span>
+              </a>
             </li>
             <li class="nav-item px-3">
               <a class="wooTop__nav__items nav-link" href="#">Contact Us</a>
@@ -132,7 +181,7 @@
           </ul>
         </div>
 
-        <div class="col-3">
+        <div class="col-2">
           <ul
             class="
               wooTop__nav__rightmenu
@@ -148,29 +197,95 @@
             </li>
             <li class="nav-item border-end-0">
               <a class="wooTop__nav__items nav-link py-3 px-3" href="#"
-                ><span><i class="fa fa-user"></i></span
+                ><span><i class="fa fa-user"></i> </span
               ></a>
             </li>
             <li class="nav-item border-end-0">
               <a class="wooTop__nav__items nav-link py-3 px-2" href="#"
-                ><span><i class="fas fa-random"></i></span
+                ><span class="position-relative"><i class="fas fa-random"></i>
+                  </i><!-- badge -->
+                  <span
+                    class="
+                      position-absolute
+                      top-0
+                      start-100
+                      translate-middle
+                      badge
+                      rounded-pill
+                      bg-dark
+                    "
+                  >
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <!-- badge -->
+                  </span
               ></a>
             </li>
             <li class="nav-item border-end-0">
               <a class="wooTop__nav__items nav-link py-3 px-2" href="#"
-                ><span><i class="fa fa-heart"></i></span
-              ></a>
+                ><span class="position-relative"
+                  ><i class="fa fa-heart"></i>
+                  <!-- badge -->
+                  <span
+                    class="
+                      position-absolute
+                      top-0
+                      start-100
+                      translate-middle
+                      badge
+                      rounded-pill
+                      bg-dark
+                    "
+                  >
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <!-- badge -->
+                </span></a
+              >
             </li>
             <li class="nav-item border-end-0">
               <a class="wooTop__nav__items nav-link py-3 px-2" href="#"
-                ><span><i class="fas fa-shopping-bag"></i></span
-              ></a>
+                ><span class="position-relative"
+                  ><i class="fas fa-shopping-bag"></i>
+                  <!-- badge -->
+                  <span
+                    class="
+                      position-absolute
+                      top-0
+                      start-100
+                      translate-middle
+                      badge
+                      rounded-pill
+                      bg-dark
+                    "
+                  >
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <!-- badge -->
+                </span></a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- Navigation section bottom ends -->
+
+    <!-- Page header starts -->
+    <div class="WooPageHeader py-5 text-center">
+      <nav style="--bs-breadcrumb-divider: '/'" aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item">
+            <a class="text-decoration-none Wootext-primary" href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+    </div>
+    <!-- Page header ends -->
 
     <!-- *********************** main content here ************************* -->
 

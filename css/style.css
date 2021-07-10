@@ -11456,5 +11456,101 @@ footer {
 
 /**********************pagination css ends****************/
 /*Shope page conent ends*/
+/*Imporing single product scss*/
+.WooProduct {
+  overflow: hidden;
+}
+.WooProduct__image {
+  overflow: hidden;
+}
+.WooProduct__image img {
+  width: 100%;
+}
+.WooProduct__info {
+  padding-left: 50px;
+}
+.WooProduct__info__title {
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+  color: #010101;
+}
+.WooProduct__info__price {
+  display: flex;
+  align-items: center;
+  margin: 15px 0 26px;
+}
+.WooProduct__info__price span {
+  font-size: 24px;
+  color: #fe5252;
+}
+.WooProduct__info__rating {
+  display: flex;
+  align-items: center;
+  margin: 0 0 17px;
+}
+.WooProduct__info__rating .yellow {
+  color: #ffa900;
+}
+.WooProduct__info__rating .gray {
+  color: #5f5d5d;
+}
+.WooProduct__info__description {
+  margin: 20px 0 34px;
+  padding: 0 0 37px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.WooProduct__info__description p {
+  font-size: 15px;
+  line-height: 28px;
+  margin: 0;
+  color: #333;
+}
+.WooProduct__info__action {
+  position: relative;
+  display: none;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 34px;
+}
+.WooProduct__info__action--counter .counter__minus,
+.WooProduct__info__action--counter .counter__plus {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  width: 24px;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  color: #8f8f8f;
+  border: none;
+  background: none;
+}
+.WooProduct__info__action--counter input {
+  font-size: 14px;
+  float: left;
+  width: 80px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #8f8f8f;
+  border: 1px solid #ddd;
+  background: transparent none repeat scroll 0 0;
+}
+.WooProduct__info__action--counter .counter__minus {
+  top: 0;
+  right: 0;
+  height: 60px;
+}
+.WooProduct__info__action--counter .counter__plus {
+  top: 0;
+  left: 0;
+  height: 60px;
+}
 
 /*# sourceMappingURL=style.css.map */
