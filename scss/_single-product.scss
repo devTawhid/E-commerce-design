@@ -103,6 +103,161 @@
           height: 60px;
         }
       }
+
+      &--cart {
+        overflow: hidden;
+
+        button {
+          font-weight: 700;
+          line-height: 1;
+          z-index: 99;
+          display: inline-block;
+          padding: 23px 38px;
+          text-transform: uppercase;
+          color: #fff;
+          border: none;
+          background-color: #343538;
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: "";
+            left: -100%;
+            top: 0;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background: #a749ff;
+          }
+
+          &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            z-index: -1;
+            height: 100%;
+            width: 0;
+            background: #a749ff;
+            transition: all 0.7s ease-in-out;
+          }
+        }
+
+        &:hover button::before {
+          left: 0;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover button::after {
+          width: 100%;
+          // transition: all 0.7s ease-in-out;
+          transition-delay: 0.3s;
+        }
+      } //special hover button
+
+      &--wishlist,
+      &--compare {
+        button {
+          background: none repeat scroll 0 0;
+          border: none;
+        }
+      }
+    }
+
+    &__category,
+    &__tags {
+      font-size: 15px;
+      margin-right: 5px;
+      color: #676767;
+      margin: 0 0 10px;
+    }
+
+    &__socials {
+      span {
+        &:hover {
+          color: #a749ff;
+        }
+      }
     }
   } //info
+}
+
+.WooProductTab {
+  ul {
+    .active {
+      color: #000 !important;
+      border-bottom: 2px solid #000;
+      border-radius: 0;
+    }
+
+    li {
+      button {
+        font-size: 1.5rem !important;
+        color: gray;
+        font-weight: 500 !important;
+
+        &:hover {
+          color: #000 !important;
+        }
+      }
+    }
+  }
+
+  &__spac {
+    &__name {
+      font-weight: 500;
+      color: #000;
+      display: inline-block;
+      min-width: 8rem;
+    }
+
+    &__value {
+      color: gray;
+    }
+  }
+}
+
+.WooProcuctReview {
+  &__name {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+  }
+
+  &__rating {
+    font-size: 0.7rem;
+    margin-left: 10px;
+  }
+  &__description {
+    font-family: Poppins, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+  }
+}
+
+.Woo__review-form {
+  margin-right: 0;
+
+  input,
+  textarea {
+    border-radius: 0;
+
+    &::placeholder {
+      font-size: 0.8rem;
+    }
+  }
+  input[type="submit"] {
+    background-color: #a749ff;
+    border: none;
+    color: white;
+    padding: 0.7em 2em;
+
+    &:hover {
+      background-color: #333333;
+    }
+  }
 }

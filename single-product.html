@@ -291,60 +291,412 @@
 
     <!-- *********************** main content here ************************* -->
     <div class="container py-5">
+        
+        <!-- product details starts -->
         <div class="WooProduct">
-            <div class="row py-5">
-                <div class="col-6">
-                    <div class="WooProduct__image">
-                        <img src="images/Project-img09.jpg" alt="">
-                    </div>
+          <div class="row py-5">
+              <div class="col-6">
+                  <div class="WooProduct__image">
+                      <img src="images/Project-img09.jpg" alt="">
+                  </div>
+              </div>
+              <div class="col-6">
+                  <div class="WooProduct__info">
+                      <h2 class="WooProduct__info__title">
+                          Lorem ipsum dolor sit.
+                      </h2>
+                      <div class="WooProduct__info__price">
+                          <span>€15.6</span>
+                      </div>
+                      <div class="WooProduct__info__rating">
+                          <span class="yellow"><i class="fas fa-star"></i></span>
+                          <span class="yellow"><i class="fas fa-star"></i></span>
+                          <span class="yellow"><i class="fas fa-star"></i></span>
+                          <span class="yellow"><i class="fas fa-star"></i></span>
+                          <span class="gray"><i class="fas fa-star"></i></span>
+                      </div>
+                      <div class="WooProduct__info__description">
+                          <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ut qui architecto, facere sed vero totam voluptas corrupti repudiandae mollitia a incidunt, libero quod sequi aliquam in dolorum molestias culpa.
+                          </p>
+                      </div>
+                      <div class="WooProduct__info__action d-flex">
+                          <div class="WooProduct__info__action--counter pe-4 d-flex">
+                              <button class="counter__minus">-</button>
+                              <input type="text" value="1">
+                              <button class="counter__plus">+</button>
+                          </div>
+                          
+                          <!-- special button -->
+                          <div class="WooProduct__info__action--cart pe-4">
+                              <button>ADD TO CART</button>
+                          </div>
+                          <!-- special button end -->
+                          
+                          <div class="WooProduct__info__action--wishlist pe-4">
+                              <button><i class="fas fa-heart"></i></button>
+                          </div>
+                          <div class="WooProduct__info__action--compare pe-4">
+                              <button><i class="fas fa-random"></i></button>
+                          </div>
+                      </div>
+                      <div class="WooProduct__info__category">
+                          Category: <span>Plants</span>
+                      </div>
+                      <div class="WooProduct__info__tags">
+                          Tags: <span>Plants</span>
+                      </div>
+                      <div class="WooProduct__info__socials pt-3">
+                        <span class="pe-5"><i class="fab fa-facebook-f"></i></span>
+                        <span class="pe-5"><i class="fab fa-dribbble"></i></span>
+                        <span class="pe-5"><i class="fab fa-pinterest-p"></i></span>
+                        <span class="pe-5"><i class="fab fa-twitter"></i></span>
+                        <span class="pe-5"><i class="fab fa-linkedin-in"></i></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!-- product details ends -->
+
+        <!-- products tab starts -->
+        <div class="WooProductTab">
+          <ul class="nav nav-pills justify-content-center mb-0" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link bg-white" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Additional Information</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link bg-white" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Description</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link bg-white  active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews <span>(2)</span></button>
+            </li>
+          </ul>
+          <hr class="mt-0 pt-0">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="WooProductTab__spec">
+                <div class="py-2">
+                  <span class="WooProductTab__spac__name">Weight:</span>
+                  <span class="WooProductTab__spac__value">400g</span>
                 </div>
-                <div class="col-6">
-                    <div class="WooProduct__info">
-                        <h2 class="WooProduct__info__title">
-                            Lorem ipsum dolor sit.
-                        </h2>
-                        <div class="WooProduct__info__price">
-                            <span>€15.6</span>
-                        </div>
-                        <div class="WooProduct__info__rating">
-                            <span class="yellow"><i class="fas fa-star"></i></span>
-                            <span class="yellow"><i class="fas fa-star"></i></span>
-                            <span class="yellow"><i class="fas fa-star"></i></span>
-                            <span class="yellow"><i class="fas fa-star"></i></span>
-                            <span class="gray"><i class="fas fa-star"></i></span>
-                        </div>
-                        <div class="WooProduct__info__description">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ut qui architecto, facere sed vero totam voluptas corrupti repudiandae mollitia a incidunt, libero quod sequi aliquam in dolorum molestias culpa.
-                            </p>
-                        </div>
-                        <div class="WooProduct__info__action d-flex">
-                            <div class="WooProduct__info__action--counter d-flex">
-                                <button class="counter__minus">-</button>
-                                <input type="text" value="1">
-                                <button class="counter__plus">+</button>
-                            </div>
-                            <div class="WooProduct__info__action--cart">ADD TO CART</div>
-                            <div class="WooProduct__info__action--wishlist">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <div class="WooProduct__info__action--compare">
-                                <i class="fa fa-random"></i>
-                            </div>
-                        </div>
-                        <div class="WooProduct__info__category">
-                            Category: <span>Plants</span>
-                        </div>
-                        <div class="WooProduct__info__tags">
-                            Tags: <span>Plants</span>
-                        </div>
-                        <div class="WooProduct__info__socials">
-    
-                        </div>
-                    </div>
+                <div class="py-2">
+                  <span class="WooProductTab__spac__name">Dimension: </span>
+                  <span class="WooProductTab__spac__value">10 x 10 x 15</span>
                 </div>
+                <div class="py-2">
+                  <span class="WooProductTab__spac__name">Materials:</span>
+                  <span class="WooProductTab__spac__value">60% cotton, 40% polyester</span>
+                </div>
+                <div class="py-2">
+                  <span class="WooProductTab__spac__name">Other Info:</span>
+                  <span class="WooProductTab__spac__value">American heirloom jean shorts pug seitan letterpress</span>
+                </div>
+              </div>
             </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad vero quas quos excepturi nisi laboriosam cum facere similique ipsam cumque, repudiandae saepe ipsum officiis tempora dolore consequuntur quidem aperiam, dolorum explicabo! Delectus, voluptates deleniti? Magni ducimus velit quo doloribus voluptatibus laboriosam ipsa ipsum officiis dolore unde! Accusantium, quia praesentium?
+            </div>
+            <div class="tab-pane fade  show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              
+              
+              <!--*************** product review here ***************-->
+              <!-- TO GET THE REVIEW TEMPLATE TO TO THE MARKUP TEMPLATE PAGE -->
+              
+              <div class="row">
+                <div class="col-7">
+                  <div class="WooProcuctReview">
+
+                    <div class="d-flex p-3">
+                      <img src="images/media-img1.jpg" alt="John Doe"
+                           class="me-3 mt-3" style="width:auto;height:100px;">
+                      <div>
+                        <div>
+                          <div class="d-flex align-items-center">
+                            <h4 class="WooProcuctReview__name">John Doe</h4>
+                            <div class="WooProcuctReview__rating">
+                              <span class="yellow"><i class="fas fa-star"></i></span>
+                              <span class="yellow"><i class="fas fa-star"></i></span>
+                              <span class="yellow"><i class="fas fa-star"></i></span>
+                              <span class="yellow"><i class="fas fa-star"></i></span>
+                              <span class="gray"><i class="fas fa-star"></i></span>
+                          </div>
+                          </div>
+                          <p class="WooProcuctReview__description">Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla.</p>
+  
+   
+                      </div>
+    
+    
+                              <div class="WooProductReview">
+                                <div class="d-flex p-3">
+                                  <img src="images/media-img2.jpg" alt="John Doe"
+                                       class="me-3 mt-3" style="width:auto;height:100px;">
+                                  <div>
+                                      <div class="d-flex align-items-center">
+                                        <h4 class="WooProcuctReview__name">John Doe</h4>
+                                        <div class="WooProcuctReview__rating">
+                                          <span class="yellow"><i class="fas fa-star"></i></span>
+                                          <span class="yellow"><i class="fas fa-star"></i></span>
+                                          <span class="yellow"><i class="fas fa-star"></i></span>
+                                          <span class="yellow"><i class="fas fa-star"></i></span>
+                                          <span class="gray"><i class="fas fa-star"></i></span>
+                                      </div>
+                                      </div>
+                                      <p class="WooProcuctReview__description">Vestibulum ante ipsum primis aucibus orci luctustrices posuere cubilia Curae Suspendisse viverra ed viverra. Mauris ullarper euismod vehicula. Phasellus quam nisi, congue id nulla.
+
+                                      </p>  
+  
+                                      <!--********** next nested review goes here******** -->
+  
+                                  </div>    
+                              </div> <!-- nested review -->
+                              </div>
+
+                             <!--********** next nested review goes here******** -->
+                             
+                       </div> <!--body-->
+                    </div>
+
+
+                  </div><!--wooproductreview-->
+                </div><!--col-->
+
+                <div class="col-5">
+                  <div class="ms-5">
+                    <h5>Add a Reviw</h5>
+                  <div class="d-flex align-items-center">
+                    <span class="">Your Review:</span>
+                    <div class="WooProcuctReview__rating">
+                      <span class="yellow"><i class="fas fa-star"></i></span>
+                      <span class="yellow"><i class="fas fa-star"></i></span>
+                      <span class="yellow"><i class="fas fa-star"></i></span>
+                      <span class="yellow"><i class="fas fa-star"></i></span>
+                      <span class="gray"><i class="fas fa-star"></i></span>
+                  </div>
+                  </div>
+                  
+                  <!-- review form starts -->
+                  <form class="Woo__review-form">
+                    <div class="row pt-3 input-group">
+                      <div class="col-6"><input class="form-control" type="text" placeholder="Name"></div>
+                      <div class="col-6"><input class="form-control" type="text" placeholder="Email"></div>
+                      <div class="col py-3">
+                        <textarea class="form-control" name="" id="" cols="25" rows="6" placeholder="Message"></textarea>
+                      </div>
+                      <div class ="review-submit">
+                        <input type="submit">
+                      </div>
+                    </div>
+                  </form>
+                  <!-- review form ends -->
+
+                </div>
+                  </div>
+              </div><!--row-->
+
+              
+              <!--*************** product review here ***************-->
+              
+
+
+
+            </div>
+          </div>
+          
         </div>
+        <!-- products tab ends -->
+
+        <!-- heading -->
+        <div class="WooDailyDeals__heading text-center pt-5">
+          <h2 class="WooDailyDeals__heading__title text-center">DAILY DEALS!</h2>
+        </div>
+        <!-- heading ends -->
+
+        <!-- recommened products starts -->
+        <div class="row py-5">
+
+          <div class="col-md-3">
+              
+            <!--************ product single markup starts **************-->
+            <div class="WooDailyDeals__product__single">
+              <div class="WooDailyDeals__product__single__img">
+                <img src="images/Project-img08.jpg" alt="">
+                <img src="images/Project-img09.jpg" alt="">
+              </div>
+              <div class="WooDailyDeals__product__single__badges">
+                <span>-10%</span>
+                <span>New</span>
+              </div>
+              <div class="WooDailyDeals__product__single__action">
+                <button class="WooDailyDeals__product__single__action__wishlist">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <button class="WooDailyDeals__product__single__action__cart">
+                  <i class="fas fa-cart-plus"></i>
+                  Add To Cart
+                </button>
+                <button class="WooDailyDeals__product__single__action__quickview">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="WooDailyDeals__product__single__info  text-center">
+                <div class="WooDailyDeals__product__single__info__title">
+                  <a href="#">Lorem ipsum plant two</a>
+                </div>
+                <div class="WooDailyDeals__product__single__info__rating">
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="gray"><i class="fas fa-star"></i></span>
+                </div>
+                <div class="WooDailyDeals__product__single__info__price">
+                  <span class="WooDailyDeals__product__single__info__price__sale">$75</span>
+                  <span class="WooDailyDeals__product__single__info__price__regular">$95</span>
+                </div>
+              </div>
+            </div> <!--product single -->
+            <!--************ product single markup ends **************-->
+
+          </div> <!--one column -->  
+          
+          <div class="col-md-3">
+              
+            <!--************ product single markup starts **************-->
+            <div class="WooDailyDeals__product__single">
+              <div class="WooDailyDeals__product__single__img">
+                <img src="images/Project-img08.jpg" alt="">
+                <img src="images/Project-img09.jpg" alt="">
+              </div>
+              <div class="WooDailyDeals__product__single__badges">
+                <span>-10%</span>
+                <span>New</span>
+              </div>
+              <div class="WooDailyDeals__product__single__action">
+                <button class="WooDailyDeals__product__single__action__wishlist">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <button class="WooDailyDeals__product__single__action__cart">
+                  <i class="fas fa-cart-plus"></i>
+                  Add To Cart
+                </button>
+                <button class="WooDailyDeals__product__single__action__quickview">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="WooDailyDeals__product__single__info  text-center">
+                <div class="WooDailyDeals__product__single__info__title">
+                  <a href="#">Lorem ipsum plant two</a>
+                </div>
+                <div class="WooDailyDeals__product__single__info__rating">
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="gray"><i class="fas fa-star"></i></span>
+                </div>
+                <div class="WooDailyDeals__product__single__info__price">
+                  <span class="WooDailyDeals__product__single__info__price__sale">$75</span>
+                  <span class="WooDailyDeals__product__single__info__price__regular">$95</span>
+                </div>
+              </div>
+            </div> <!--product single -->
+            <!--************ product single markup ends **************-->
+
+          </div> <!--one column -->  
+          
+          <div class="col-md-3">
+              
+            <!--************ product single markup starts **************-->
+            <div class="WooDailyDeals__product__single">
+              <div class="WooDailyDeals__product__single__img">
+                <img src="images/Project-img08.jpg" alt="">
+                <img src="images/Project-img09.jpg" alt="">
+              </div>
+              <div class="WooDailyDeals__product__single__badges">
+                <span>-10%</span>
+                <span>New</span>
+              </div>
+              <div class="WooDailyDeals__product__single__action">
+                <button class="WooDailyDeals__product__single__action__wishlist">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <button class="WooDailyDeals__product__single__action__cart">
+                  <i class="fas fa-cart-plus"></i>
+                  Add To Cart
+                </button>
+                <button class="WooDailyDeals__product__single__action__quickview">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="WooDailyDeals__product__single__info  text-center">
+                <div class="WooDailyDeals__product__single__info__title">
+                  <a href="#">Lorem ipsum plant two</a>
+                </div>
+                <div class="WooDailyDeals__product__single__info__rating">
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="gray"><i class="fas fa-star"></i></span>
+                </div>
+                <div class="WooDailyDeals__product__single__info__price">
+                  <span class="WooDailyDeals__product__single__info__price__sale">$75</span>
+                  <span class="WooDailyDeals__product__single__info__price__regular">$95</span>
+                </div>
+              </div>
+            </div> <!--product single -->
+            <!--************ product single markup ends **************-->
+
+          </div> <!--one column -->  
+          
+          <div class="col-md-3">
+              
+            <!--************ product single markup starts **************-->
+            <div class="WooDailyDeals__product__single">
+              <div class="WooDailyDeals__product__single__img">
+                <img src="images/Project-img08.jpg" alt="">
+                <img src="images/Project-img09.jpg" alt="">
+              </div>
+              <div class="WooDailyDeals__product__single__badges">
+                <span>-10%</span>
+                <span>New</span>
+              </div>
+              <div class="WooDailyDeals__product__single__action">
+                <button class="WooDailyDeals__product__single__action__wishlist">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <button class="WooDailyDeals__product__single__action__cart">
+                  <i class="fas fa-cart-plus"></i>
+                  Add To Cart
+                </button>
+                <button class="WooDailyDeals__product__single__action__quickview">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="WooDailyDeals__product__single__info  text-center">
+                <div class="WooDailyDeals__product__single__info__title">
+                  <a href="#">Lorem ipsum plant two</a>
+                </div>
+                <div class="WooDailyDeals__product__single__info__rating">
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="yellow"><i class="fas fa-star"></i></span>
+                  <span class="gray"><i class="fas fa-star"></i></span>
+                </div>
+                <div class="WooDailyDeals__product__single__info__price">
+                  <span class="WooDailyDeals__product__single__info__price__sale">$75</span>
+                  <span class="WooDailyDeals__product__single__info__price__regular">$95</span>
+                </div>
+              </div>
+            </div> <!--product single -->
+            <!--************ product single markup ends **************-->
+
+          </div> <!--one column --> 
+        </div>
+        <!-- recommened products ends -->
     </div>
     <!-- *********************** main content here ************************* -->
 
