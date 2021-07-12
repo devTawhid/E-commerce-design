@@ -291,82 +291,144 @@
     <div class="container">
         <div class="row py-5">
             <div class="col-7">
-                <form action="">
+
+                <h5>Billing Details</h5>
+
+                <form action="" class="checkout-form">
                     
                     <div class="row">
                        
-                        <div class="col-6">
+                        <div class="col-6 mt-4">
                             <label for="name" class="form-label">Name</label>
-                            <input id="name" type="text" class="form-control form-control-lg">
+                            <input type="text" class="form-control form-control-lg">
                         </div>
                         
 
-                        <div class="col-6">
+                        <div class="col-6 mt-4">
                             <label for="name" class="form-label">Email address</label>
-                            <input id="name" type="text" class="form-control form-control-lg">
+                            <input type="text" class="form-control form-control-lg">
                         </div>
                        
-                        <div class="col-12">
+                        <div class="col-12 mt-4">
                             <label for="name" class="form-label">Company Name</label>
-                            <input id="name" type="text" class="form-control form-control-lg">
+                            <input type="text" class="form-control form-control-lg">
                         </div>
                         
 
-                        <div class="col-12">
+                        <div class="col-12 mt-4">
                             <label for="name" class="form-label">Country</label>
-                            <input id="name" type="text" class="form-control form-control-lg">
+                            <select class="form-control form-control-lg">
+                                <option>Select a country</option>
+                                <option>Azerbaijan</option>
+                                <option>Bahamas</option>
+                                <option>Bahrain</option>
+                                <option>Bangladesh</option>
+                                <option>Barbados</option>
+                            </select>
                         </div>
                         
 
-                        <div class="col-12">
+                        <div class="col-12 mt-4">
                             <label for="name" class="form-label">Street Address</label>
-                            <input id="name" type="text" class="form-control form-control-lg">
-                            <input id="name" type="text" class="mt-2 form-control form-control-lg">
+                            <input placeholder="House number and street name" id="name" type="text" class="form-control form-control-lg">
+                            <input placeholder="Apartment, suite, unit etc." type="text" class="mt-2 form-control form-control-lg">
                         </div>
                         
 
-                        <div class="col-12">
+                        <div class="col-12 mt-4">
                             <label for="name" class="form-label">Town / City</label>
-                            <input id="name" type="text" class="form-control form-control-lg">
+                            <input type="text" class="form-control form-control-lg">
                         </div>
                         
 
-                        <div class="col-6">
+                        <div class="col-6 mt-4">
                             <label for="name" class="form-label">State / Country</label>
-                            <input id="name" type="text" class="form-control form-control-lg">
+                            <input type="text" class="form-control form-control-lg">
                         </div>
                         
 
-                        <div class="col-6">
+                        <div class="col-6 mt-4">
                             <label for="name" class="form-label">Postcode / ZIP</label>
-                            <input id="name" type="text" class="form-control form-control-lg">
+                            <input type="text" class="form-control form-control-lg">
                         </div>
                         
 
-                        <div class="col-6">
+                        <div class="col-6 mt-4">
                             <label for="name" class="form-label">Phone</label>
-                            <input id="name" type="text" class="form-control form-control-lg">
+                            <input type="text" class="form-control form-control-lg">
                         </div>
                         
 
-                        <div class="col-6">
+                        <div class="col-6 mt-4">
                             <label for="name" class="form-label">Email address</label>
-                            <input id="name" type="text" class="form-control form-control-lg">
+                            <input type="text" class="form-control form-control-lg">
                         </div>
                         
+                        <h5 class="mt-4">Additional notes</h5>
 
-                        <div class="col-12">
+                        <div class="col-12 mt-4">
                             <label for="name" class="form-label">Order Notes</label>
-                            <textarea name="" id="" cols="77" rows="4"></textarea>
+                            <textarea id="" cols="77" rows="4" value="" class="form-control" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
                         </div>
                         
 
-                        
                     </div><!--row-->
                     
                 </form>
             </div><!--col-7-->
+
             <div class="col-5">
+
+                <h5 class="mb-5">Your Order</h5>
+
+                <div class="Woocheckout-wrapper px-3 py-5">
+                    <div class="container">
+                        <div class="WooOrderdProductList">
+                            <div class="WooOrderdProductList__header">
+                                <h5>Your Order</h5>
+                                <span>Total</span>
+                            </div>
+                            <hr>
+                            <ul class="WooOrderdProductList__list">
+                                <li class="list my-2">
+                                    <span>Lorem, ipsum dolor.</span>
+                                    <span>€33.60</span>
+                                </li>
+                                <li class="list my-2">
+                                    <span>Lorem, ipsum dolor.</span>
+                                    <span>€33.60</span>
+                                </li>
+                                <li class="list my-2">
+                                    <span>Lorem, ipsum dolor.</span>
+                                    <span>€33.60</span>
+                                </li>
+                                <li class="list my-2">
+                                    <span>Lorem, ipsum dolor.</span>
+                                    <span>€33.60</span>
+                                </li>
+                                <li class="list my-2">
+                                    <span>Lorem, ipsum dolor.</span>
+                                    <span>€33.60</span>
+                                </li>
+                                <li class="list my-2">
+                                    <span>Lorem, ipsum dolor.</span>
+                                    <span>€33.60</span>
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="WooOrderdProductList__shipping">
+                                <span>Shipping</span>
+                                <span>Free shipping</span>
+                            </div>
+                            <hr>
+                            <div class="WooOrderdProductList__total">
+                                <span>Total</span>
+                                <span class="Wootext-primary">€33.60</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="WooProduct__info__action--cart check-out-button">Place Order</button>
             </div><!--col-5-->
         </div>
     </div>

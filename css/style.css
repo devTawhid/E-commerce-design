@@ -11681,4 +11681,68 @@ footer {
   background-color: #333333;
 }
 
+/*Imputing check out scss */
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+  font-size: 14px;
+  padding-right: 10px;
+  line-height: 28px;
+  padding-left: 20px;
+  color: #333;
+  border-radius: 0;
+  border: 1px solid #e6e6e6;
+  background: transparent none repeat scroll 0 0;
+}
+.checkout-form label {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  margin: 0 0 7px;
+  color: #000;
+}
+.checkout-form textarea {
+  width: 100%;
+}
+
+.Woocheckout-wrapper {
+  background: #f6f6f6;
+}
+
+.WooOrderdProductList__header, .WooOrderdProductList__shipping, .WooOrderdProductList__total {
+  display: flex;
+  justify-content: space-between;
+}
+.WooOrderdProductList__total {
+  font-size: 20px;
+  font-weight: 500;
+}
+.WooOrderdProductList__list {
+  list-style: none;
+  padding-left: 0rem;
+}
+.WooOrderdProductList__list .list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.check-out-button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.7rem 0rem;
+  font-size: 1rem;
+  background-color: #a749ff;
+  color: white;
+  border: none;
+  border-radius: 100px;
+}
+.check-out-button:hover {
+  background-color: #333333;
+}
+
+/*Imputing check out scss */
+/*Imputing check out scss */
+/*Imputing check out scss */
+
 /*# sourceMappingURL=style.css.map */

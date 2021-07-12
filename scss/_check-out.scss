@@ -1,0 +1,68 @@
+.checkout-form {
+  input,
+  textarea,
+  select {
+    font-size: 14px;
+    padding-right: 10px;
+    line-height: 28px;
+    padding-left: 20px;
+    color: #333;
+    border-radius: 0;
+    border: 1px solid #e6e6e6;
+    background: transparent none repeat scroll 0 0;
+  }
+  label {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    margin: 0 0 7px;
+    color: #000;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+
+.Woocheckout-wrapper {
+  background: #f6f6f6;
+}
+
+.WooOrderdProductList {
+  &__header,
+  &__shipping,
+  &__total {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__total {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0rem;
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+  }
+}
+
+.check-out-button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.7rem 0rem;
+  font-size: 1rem;
+  background-color: #a749ff;
+  color: white;
+  border: none;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: #333333;
+  }
+}
