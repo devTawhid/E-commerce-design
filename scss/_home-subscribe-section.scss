@@ -1,0 +1,56 @@
+/*Subscribe section css starts*/
+.WooSubscribe {
+  margin-bottom: 100px;
+
+  &__title {
+    font-size: 48px;
+    margin: 0 0 23px;
+    color: #010101;
+  }
+
+  &__description {
+    font-size: 16px;
+    margin: 0 0 23px;
+    color: #696969;
+  }
+}
+/************Form section***********/
+.WooSubscribe__form {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+
+  &__input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #e2e2e2;
+    width: 100%;
+    height: 45px;
+    padding: 2px 50px 2px 0;
+    color: #333;
+
+    &::placeholder {
+      line-height: 45px;
+      font-size: 14px;
+      padding-bottom: 500px;
+    }
+
+    &:focus {
+      border: 0;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 30px;
+    height: 45px;
+    padding: 0;
+    transition: 0.3s;
+    color: #cacaca;
+    border: none;
+    background: none;
+  }
+}
+/************Form section***********/

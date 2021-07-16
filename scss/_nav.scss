@@ -1,0 +1,65 @@
+/* Navitation css */
+
+.home {
+  background-color: #f6f6f6;
+}
+
+.wooTop__nav__items {
+  color: #555252;
+
+  &:hover {
+    color: #a749ff;
+  }
+}
+
+.wooTop__nav__item--bordered::after {
+  position: absolute;
+  top: 47%;
+  right: 0;
+  width: 1px;
+  height: 15px;
+  content: "";
+  transform: translateY(-50%);
+  background-color: #d5d4d4;
+}
+
+.wooTop__nav__submenu {
+  display: none;
+}
+
+.wooTop__nav__dropdown {
+  position: relative;
+}
+
+.wooTop__nav__dropdown:hover .wooTop__nav__submenu {
+  display: block;
+  position: absolute;
+  z-index: 220;
+  top: 30px;
+  left: 20px;
+  width: 125px;
+  padding: 8px 12px 10px;
+  transition: all 0.5s ease 0s;
+  transform-origin: center top 0;
+  text-align: left;
+  opacity: 13;
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+}
+
+/*Archive shop navigation starts*/
+.WooTopNav__notice {
+  margin: 0;
+  letter-spacing: 0.8px;
+  color: #555252;
+
+  p {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+  }
+}
+/*Archive shop navigation ends*/

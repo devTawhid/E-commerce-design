@@ -2,10 +2,6 @@
 /*Customization of Bootstrap*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
-body {
-  overflow-x: hidden;
-}
-
 /* Importing Bootstrap from node_modules*/
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
@@ -10755,6 +10751,16 @@ textarea.form-control-lg {
   }
 }
 /* All custom css */
+body {
+  overflow-x: hidden;
+}
+
+/* page header breadcrumb css starts*/
+.WooPageHeader {
+  background: #f7f7f7;
+}
+
+/* page header breadcrumb css ends*/
 /* Navitation css */
 .home {
   background-color: #f6f6f6;
@@ -10802,6 +10808,22 @@ textarea.form-control-lg {
   box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
 }
 
+/*Archive shop navigation starts*/
+.WooTopNav__notice {
+  margin: 0;
+  letter-spacing: 0.8px;
+  color: #555252;
+}
+.WooTopNav__notice p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+/*Archive shop navigation ends*/
 /****************** Mega menu css ********************/
 .Wootext-primary {
   color: #a749ff;
@@ -10878,7 +10900,6 @@ textarea.form-control-lg {
 }
 
 /****************** Mega menu css ********************/
-/* Navitation css ends*/
 /*Main Carousel css starts*/
 .carousel-control-prev {
   left: -120px;
@@ -11016,6 +11037,7 @@ textarea.form-control-lg {
   color: #555;
 }
 
+/* Daily Deals css ends */
 /************ PRODUCTS ***********/
 .WooDailyDeals__product__single {
   margin: 30px 0;
@@ -11158,7 +11180,6 @@ textarea.form-control-lg {
 }
 
 /************ PRODUCTS ***********/
-/* Daily Deals css ends */
 /*Support section css starts*/
 .WooSupport {
   margin: 100px 0;
@@ -11251,68 +11272,6 @@ textarea.form-control-lg {
 }
 
 /************Form section***********/
-/*Subscribe section css ends*/
-/*footer starts*/
-footer {
-  padding: 80px 0;
-  background-color: #f1f1f1;
-}
-
-.footer__logo img {
-  margin-top: 41px;
-  margin-bottom: 12px;
-}
-
-.footer__widget__title {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  margin: 0 0 16px;
-  color: #313131;
-  text-transform: uppercase;
-}
-.footer__widget ul {
-  list-style: none;
-}
-.footer__widget ul li {
-  margin: 0 0 11px;
-  font-size: 14px;
-  color: #5d5d5d;
-}
-.footer__widget ul li:hover {
-  color: #a749ff;
-}
-
-.copyright {
-  font-size: 14px;
-  color: #313131;
-  letter-spacing: 0.9px;
-}
-
-/*footer ends*/
-/*Archive shop navigation starts*/
-.WooTopNav__notice {
-  margin: 0;
-  letter-spacing: 0.8px;
-  color: #555252;
-}
-.WooTopNav__notice p {
-  font-family: Poppins, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 0;
-  padding: 0;
-}
-
-/*Archive shop navigation ends*/
-/* page header breadcrumb css starts*/
-.WooPageHeader {
-  background: #f7f7f7;
-}
-
-/* page header breadcrumb css ends*/
-/* shop sidebar css starts */
 .WooShopSidebar__widgets__title {
   font-size: 16px;
   font-weight: 500;
@@ -11400,7 +11359,6 @@ footer {
 }
 
 /* shop sidebar css ends */
-/*Shope page conent starts*/
 /**********************Content header starts****************/
 #WooShop__dropdown__button {
   font-size: 14px;
@@ -11463,8 +11421,6 @@ footer {
 }
 
 /**********************pagination css ends****************/
-/*Shope page conent ends*/
-/*Imporing single product scss*/
 .WooProduct {
   overflow: hidden;
 }
@@ -11681,7 +11637,6 @@ footer {
   background-color: #333333;
 }
 
-/*Imputing check out scss */
 .checkout-form input,
 .checkout-form textarea,
 .checkout-form select {
@@ -11741,8 +11696,43 @@ footer {
   background-color: #333333;
 }
 
-/*Imputing check out scss */
-/*Imputing check out scss */
-/*Imputing check out scss */
+/*footer starts*/
+footer {
+  padding: 80px 0;
+  background-color: #f1f1f1;
+}
+
+.footer__logo img {
+  margin-top: 41px;
+  margin-bottom: 12px;
+}
+
+.footer__widget__title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 16px;
+  color: #313131;
+  text-transform: uppercase;
+}
+.footer__widget ul {
+  list-style: none;
+}
+.footer__widget ul li {
+  margin: 0 0 11px;
+  font-size: 14px;
+  color: #5d5d5d;
+}
+.footer__widget ul li:hover {
+  color: #a749ff;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #313131;
+  letter-spacing: 0.9px;
+}
+
+/*footer ends*/
 
 /*# sourceMappingURL=style.css.map */

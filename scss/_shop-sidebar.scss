@@ -1,0 +1,103 @@
+.WooShopSidebar {
+  &__widgets {
+    &__title {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0;
+      color: #333;
+    }
+
+    &__content {
+      margin: 30px 0;
+
+      form {
+        position: relative;
+        width: 80%;
+
+        .search-input {
+          width: 100%;
+          font-size: 14px;
+          height: 43px;
+          padding: 2px 55px 2px 18px;
+          color: #000;
+          border: 1px solid #e6e6e6;
+          background: transparent;
+        }
+
+        button {
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          right: 0%;
+          padding: 0 15px;
+          cursor: pointer;
+          transform: translateY(-50%);
+          color: #000;
+          border: #a1a5aa;
+          border-left: 1px solid #a1a5aa;
+          background: transparent;
+        }
+      }
+
+      &__categories {
+        button {
+          background: none;
+          border: none;
+          position: relative;
+          padding-left: 30px;
+          width: 100%;
+          text-align: left;
+          margin-bottom: 10px;
+
+          .category__checkbox {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            border: 2px solid #888;
+            border-radius: 3px;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: white;
+
+            &::after {
+              position: absolute;
+              content: "";
+              top: 0;
+              left: 3px;
+              width: 5px;
+              height: 8px;
+              transform: rotate(45deg);
+              border: solid rgb(255, 255, 255);
+            }
+          }
+
+          &:hover .category__checkbox {
+            background-color: #a749ff;
+            border: 2px solid #a749ff;
+          }
+        } //button
+
+        ul {
+          padding-left: 0;
+          width: 80%;
+
+          .btn__tag {
+            font-size: 14px;
+            background-color: #f1f1f1;
+            border-radius: 50px;
+            margin-bottom: 15px;
+            margin-right: 10px;
+
+            &:hover {
+              color: white;
+              background-color: #a749ff;
+            }
+          }
+        }
+      } //category
+    } //content ends
+  } //widgets end
+}
+/* shop sidebar css ends */

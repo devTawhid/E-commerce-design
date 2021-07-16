@@ -1,0 +1,53 @@
+/*Main Carousel css starts*/
+.carousel-control-prev {
+  left: -120px;
+}
+
+.carousel-control-next {
+  right: -120px;
+}
+
+.WooMain__carousel__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: inherit;
+  min-height: 100%;
+  //   background: palevioletred;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__subtitle {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    &__header {
+      font-size: 52px;
+      line-height: 65px;
+      margin: 5px 0 27px;
+    }
+
+    &__button {
+      font-size: 16px;
+      line-height: 1;
+      display: inline-block;
+      padding: 19px 50px;
+      text-transform: uppercase;
+      color: #010101;
+      border: 1px solid #333;
+      background: transparent;
+
+      &:hover {
+        background-color: #a749ff;
+        color: white;
+        border: 1px solid #a749ff;
+      }
+    }
+  }
+}
+/*Main Carousel css ends*/

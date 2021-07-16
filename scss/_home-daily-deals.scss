@@ -1,0 +1,39 @@
+/* Daily Deals css starts */
+.WooDailyDeals__heading__title {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 17px;
+    width: 80px;
+    height: 2px;
+    content: "";
+    background-color: #000;
+  }
+
+  &::before {
+    left: -100px;
+  }
+
+  &::after {
+    right: -100px;
+  }
+}
+
+.WooDailyDeals__tablist {
+  &__tab a {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    transition: all 0.3s ease 0s;
+    color: #555;
+  }
+}
+
+/* Daily Deals css ends */
