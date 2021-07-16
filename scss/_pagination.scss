@@ -1,0 +1,39 @@
+/**********************pagination css starts****************/
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #a749ff;
+  border-color: #a749ff;
+}
+.pagination {
+  .active {
+    background: #a749ff !important;
+  }
+
+  li {
+    margin: 0 10px;
+    border-radius: 50% !important;
+
+    a,
+    span {
+      font-size: 16px;
+      line-height: 43px;
+      display: inline-block;
+      width: 43px;
+      height: 43px;
+      padding: 0;
+      text-align: center;
+      color: #a749ff;
+      border: none;
+      border-radius: 100% !important;
+      background: none;
+      box-shadow: 0 0 12px 0.8px rgb(0 0 0 / 10%);
+
+      &:hover {
+        background: #a749ff;
+        color: #fff;
+      }
+    }
+  }
+}
+/**********************pagination css ends****************/

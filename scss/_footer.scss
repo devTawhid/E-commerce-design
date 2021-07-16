@@ -1,0 +1,43 @@
+/*footer starts*/
+footer {
+  padding: 80px 0;
+  background-color: #f1f1f1;
+}
+
+.footer__logo {
+  img {
+    margin-top: 41px;
+    margin-bottom: 12px;
+  }
+}
+
+.footer__widget {
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 16px;
+    color: #313131;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin: 0 0 11px;
+      font-size: 14px;
+      color: #5d5d5d;
+
+      &:hover {
+        color: #a749ff;
+      }
+    }
+  }
+}
+.copyright {
+  font-size: 14px;
+  color: #313131;
+  letter-spacing: 0.9px;
+}
+/*footer ends*/
