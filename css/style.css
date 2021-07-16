@@ -10761,6 +10761,11 @@ body {
 }
 
 /* page header breadcrumb css ends*/
+/*icons sizing */
+.WooIcon {
+  font-size: 15px;
+}
+
 /* Navitation css */
 .home {
   background-color: #f6f6f6;
